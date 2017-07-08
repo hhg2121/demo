@@ -11,11 +11,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloController {
     @RequestMapping("/")
     @ResponseBody
-    public Person hhg(String name, Integer age){
-        Person p = new Person();
-        p.setName(name);
-        p.setAge(age);
-        return p;
+    public String hhg(){
+        return "HI!";
+        
     }
 
     @RequestMapping("/comment")
